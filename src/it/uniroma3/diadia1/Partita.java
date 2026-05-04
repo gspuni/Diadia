@@ -1,7 +1,7 @@
 package it.uniroma3.diadia1;
 
 import it.uniroma3.diadia.ambienti.Labirinto;
-
+import it.uniroma3.diadia.ambienti.Stanza;
 import it.uniroma3.diadia.giocatore.*;
 
 
@@ -65,5 +65,15 @@ public class Partita {
 	public Giocatore getGiocatore() {
 		return this.giocatore;
 	}
+	public Stanza getStanzaVincente() {
+		return this.labirinto.getStanzaVincente();
+	}
 
+	public void setStanzaCorrente(Stanza stanzaCorrente) {
+		this.labirinto.setStanzaCorrente(stanzaCorrente);
+	}
+
+	public Stanza getStanzaCorrente() {
+		return this.labirinto.getStanzaCorrente();
+	}
 }
